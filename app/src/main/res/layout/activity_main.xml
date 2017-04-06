@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:circle_seekbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.agree.camberseekbar.MainActivity">
+
+    <com.agree.camberseekbar.EllipseSeekBar
+        android:id="@+id/circle_seekbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:thumb="@mipmap/ic_launcher"
+        circle_seekbar:progress_background="@android:color/darker_gray"
+        circle_seekbar:progress_front="@android:color/holo_blue_light"
+        circle_seekbar:progress_max="100"
+        circle_seekbar:progress_text_color="@android:color/holo_green_light"
+        circle_seekbar:progress_text_size="30dp"
+        circle_seekbar:progress_text_stroke_width="10dp"
+        circle_seekbar:progress_width="10dp"
+        circle_seekbar:show_progress_text="true" />
+
+</RelativeLayout>
